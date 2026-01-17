@@ -1,0 +1,25 @@
+{
+  "name": "munera-intelligence-prototype",
+  "version": "1.0.0",
+  "description": "Rapid prototype for Munera Intelligence: Diligence platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && npm test",
+    "db:migrate": "cd backend && npx prisma migrate dev"
+  },
+  "keywords": [
+    "xrpl",
+    "blockchain",
+    "construction",
+    "project-management"
+  ],
+  "author": "Bitra",
+  "license": "PROPRIETARY",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
